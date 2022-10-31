@@ -2,7 +2,7 @@
 
 ## for each + remove if
 
-You have a vector with timestamped data. You want to execute a task for all data that has a timestamp in the past compared to the current time. In addition processed elements should be removed from the vector.
+You have a vector with timestamped data. You want to execute a task for all data that has a timestamp in the past compared to the current time. In addition processed elements should be removed from the vector. Is there a better way to do this than the following loop, that modifies the loop iterator?
 
 ```C++
     int current_time = 4;
