@@ -64,3 +64,6 @@ int main()
     }
 }
 ```
+
+**answer**
+The C++ Primer book [1] has some advice on this on page 354, section "Writing loops that change a container". It points out that the operations `insert` and `erase` return an iterator that should be used to refresh the loop iterator accordingly. In addition the next section reminds us to update the `end()` iterator. The code above follows all this advice.
