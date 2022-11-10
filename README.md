@@ -67,3 +67,7 @@ int main()
 
 **answer**
 The C++ Primer book [1] has some advice on this on page 354, section "Writing loops that change a container". It points out that the operations `insert` and `erase` return an iterator that should be used to refresh the loop iterator accordingly. In addition the next section reminds us to update the `end()` iterator. The code above follows all this advice.
+
+## Real-time programming and threads
+
+[This talk](https://www.youtube.com/watch?v=Tof5pRedskI) mentions that of all the related primitives, only `std::atomic` is real-time safe. Why is this and how to handle this?
